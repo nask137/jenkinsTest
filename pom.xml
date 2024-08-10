@@ -16,6 +16,13 @@
     <properties>
         <java.version>17</java.version>
         <spring-ai.version>1.0.0-M1</spring-ai.version>
+        <!--suppress UnresolvedMavenProperty -->
+        <accessKeyId>${env.ACCESS_KEY_ID}</accessKeyId>
+        <!--suppress UnresolvedMavenProperty -->
+        <accessKeySecret>${env.ACCESS_KEY_SECRET}</accessKeySecret>
+
+        <!--suppress UnresolvedMavenProperty -->
+        <userSecretKey>${env.USER_SECRET_KEY}</userSecretKey>
     </properties>
     <dependencies>
         <dependency>

@@ -14,10 +14,10 @@ import java.util.UUID;
 public class AliOSSUtils {
 
     String endpoint = "https://oss-cn-beijing.aliyuncs.com";
-    @Value(value = "${Utils.accessKeyId}")
-    private String accessKeyId;
-    @Value(value = "${Utils.accessKeySecret}")
-    String accessKeySecret ;
+
+    String accessKeyId = System.getProperty("accessKeyId");
+    String accessKeySecret = System.getProperty("accessKeySecret");
+
     String bucketName = "bebop-wn";
 
     /**

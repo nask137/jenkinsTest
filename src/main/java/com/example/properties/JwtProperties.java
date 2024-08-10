@@ -11,8 +11,8 @@ public class JwtProperties {
     /**
      * 用户生成jwt令牌相关配置
      */
-    @Value( value ="${jwt.user-secret-key}")
-    private String userSecretKey;
+    String userSecretKey = System.getProperty("userSecretKey");
+
     @Value( value ="${jwt.user-ttl}")
     private long userTtl;
     @Value( value ="${jwt.user-token-name}")
