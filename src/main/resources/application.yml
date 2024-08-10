@@ -40,5 +40,5 @@ jwt:
   user-token-name: Authorization
 logging:
   level:
-    root: error
-    org.apache.ibatis: error
+    root: info
+    org.apache.ibatis: info
