@@ -5,9 +5,9 @@ spring :
     name: jenkins_test
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/summer_practice?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-    username: summer_practice
-    password: 1234
+    url: jdbc:mysql://mysqlTest:3305/jenkinsTest?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: wn204420.
   main:
     banner-mode: off
   ai:
