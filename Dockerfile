@@ -1,5 +1,5 @@
 FROM openjdk:latest
 LABEL authors="睡个好觉"
-COPY target/Summer_practice-0.0.1-SNAPSHOT.jar /test/Summer_practice-0.0.1-SNAPSHOT.jar
+COPY target/summer_practice-1.jar /test/summer_practice-1.jar
 WORKDIR /test
-CMD ["java", "-jar", "Summer_practice-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "summer_practice-1.jar"]
