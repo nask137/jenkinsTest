@@ -1,0 +1,44 @@
+server:
+  port: 8080
+spring :
+  application:
+    name: Summer practice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/summer_practice?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: summer_practice
+    password: 1234
+  main:
+    banner-mode: off
+  ai:
+    openai:
+      api-key: sk-9giqwspaqyB5AogL1465B8698b5a42F3827e4d0cDc3a41Dc
+      base-url: https://cf.xiaoai.plus
+      chat:
+        options:
+          model: gpt-4o # 模型
+          temperature: 0.4F  #创新度 ,越高月薪但不准确,越低越死板但准确度高
+      image:
+        options:
+          n: 1  #  生成图片的数量
+          quality: "normal" # 质量
+          height: 1024  # 高度(像素)
+          width: 1024   # 宽度 (像素)
+          model: dall-e-3
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+  global-config:
+    banner: false
+    db-config:
+      update-strategy: not_null
+Static:
+  MaxMessageNum: 7  #gpt最大上下文联系数 只能为奇数,最好不要超过10
+jwt:
+  user-ttl: 72000000
+  user-token-name: Authorization
+logging:
+  level:
+    root: error
+    org.apache.ibatis: error
