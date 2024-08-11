@@ -38,3 +38,6 @@ build/
 .mvn
 mvnw
 mvnw.cmd
+
+###Shell文件###
+.Command.sh
