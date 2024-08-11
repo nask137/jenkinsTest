@@ -2,7 +2,7 @@ package com.example.utils;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
-import org.springframework.beans.factory.annotation.Value;
+
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.*;
@@ -15,8 +15,9 @@ public class AliOSSUtils {
 
     String endpoint = "https://oss-cn-beijing.aliyuncs.com";
 
-    String accessKeyId = System.getProperty("accessKeyId");
-    String accessKeySecret = System.getProperty("accessKeySecret");
+    String accessKeySecret = System.getenv("ACCESS_KEY_SECRET");
+    String accessKeyId = System.getenv("ACCESS_KEY_ID");
+
 
     String bucketName = "bebop-wn";
 
