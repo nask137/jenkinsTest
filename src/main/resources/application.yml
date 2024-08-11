@@ -36,7 +36,7 @@ mybatis-plus:
 Static:
   MaxMessageNum: 7  #gpt最大上下文联系数 只能为奇数,最好不要超过10
 jwt:
-  user-ttl: 7200000
+  user-ttl: 720000
   user-token-name: Authorization
 logging:
   level:
