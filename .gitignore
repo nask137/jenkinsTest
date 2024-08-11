@@ -16,7 +16,6 @@ target/
 ### IntelliJ IDEA ###
 .idea
 *.iws
-*.yml
 *.iml
 *.ipr
 
@@ -39,5 +38,7 @@ build/
 mvnw
 mvnw.cmd
 
+
 ###Shell文件###
 .Command.sh
+/Command.sh
